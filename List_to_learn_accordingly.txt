@@ -1,0 +1,10 @@
+1. C programming
+2.  C++
+3. Python
+4. Pandas
+5. Numpy
+6. Matplotlib and seaborn
+7. ML
+8. DL
+and the rest accordingly
+please complte R and statistics first
