@@ -8,4 +8,4 @@ int main()
     }
     return 0;
 }
-// in expressio 1 in for loop you can initialize more than one variable
+// in expression 1 in for loop you can initialize more than one variable
