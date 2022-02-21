@@ -13,9 +13,10 @@ int main()
     c = sum(a, b);
     // printf("the sum of a and b is : %d\n", c);
     // printstar(7);
-    d = takeNum();
-    printf("The num from takeNum is: %d\n", d);
-    printMyName();
+    // d = takeNum();
+    // printf("The num from takeNum is: %d\n", d);
+    // printMyName();
+    printf("the ans is: \n", sum(a, b));
     return 0;
 }
 // with arg with return val
