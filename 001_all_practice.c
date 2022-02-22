@@ -190,3 +190,23 @@
 //     }
 //     return 0;
 // }
+
+// The  following code is not running properly
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a[2][2][2] = {{{1, 2}, {3, 2}}, {{2, 3}, {5, 4}}};
+//     // printf("%d\n", a);
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             for (int k = 0; i < 2; k++)
+//             {
+//                 printf("Tha a%d\n", a[i][j][k]);
+//             }
+//         }
+//     }
+//     return 0;
+// }
