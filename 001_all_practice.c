@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 // 01
 // #include <stdio.h>
 // int main()
@@ -210,3 +212,186 @@
 //     }
 //     return 0;
 // }
+#include <stdio.h>
+// int main()
+// {
+//     // printf("%lu", sizeof(char));
+//     printf("%d\n", 2 & 3);
+//     printf("%d\n", 5 | 2);
+//     printf("%d\n", 5 & 2);
+//     return 0;
+// }
+
+// int main()
+// {
+//     int a = 7;
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         printf("%d X %d = %d\n", a, i, a * i);
+//     }
+//     return 0;
+// // }
+// int main()
+// {
+//     int age;
+//     printf("Enter your age: \n");
+//     scanf("%d", &age);
+//     if (age >= 18)
+//     {
+//         printf("You can vote as you are: %d\n", age);
+//     }
+//     else
+//     {
+//         printf("You can\'t vote as you are : %d\n", age);
+//     }
+//     return 0;
+// }
+// int main()
+// {
+//     printf("Hello World\n");
+//     int age;
+//     printf("Enter your age: \n");
+//     scanf("%d", &age);
+//     switch (age)
+//     {
+//     case 18:
+//         printf("You cant vote\n");
+//         break;
+//     case 20:
+//         printf("You can vote\n");
+//         break;
+//     default:
+//         printf("You can never vote\n");
+//         break;
+//     }
+//     return 0;
+// }
+// int main()
+// {
+//     int i = 0, num;
+//     printf("Enter the num: \n");
+//     scanf("%d", &num);
+//     // while (i <= num)
+//     // {
+//     //     printf("%d\n", i);
+//     //     i++;
+//     // }
+//     // do
+//     // {
+//     //     printf("%d\n", i);
+//     //     i++;
+//     // } while (i <= num);
+
+//     for (i = 0; i <= num; i++)
+//     {
+//         printf("%d\n", i);
+//     }
+//     return 0;
+// }
+// int main()
+// {
+//     int age;
+//     printf("Enter your age: \n");
+//     scanf("%d", &age);
+//     for (int i = 0; i < age; i++)
+//     {
+//         printf("AGE\n");
+//         if (age > 10)
+//         {
+//             // break;
+//             continue;
+//         }
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//         printf("Ami amr moto hoite pari na\n");
+//     }
+//     return 0;
+// }
+
+// int main()
+// {
+//     printf("Hello World\n");
+//     int a = 12;
+//     float b = 4.15;
+//     float c = a / b;
+
+//     printf("%f\n", c);
+//     return 0;
+// }
+
+// functions in C
+// int sum(int a, int b)
+// {
+//     return a + b;
+// }
+// void printStar(int n)
+// {
+//     int i = 1;
+//     while (i < n)
+//     {
+//         printf("%c\n", '*');
+//         i++;
+//     }
+// }
+// int take_num()
+// {
+//     int i;
+//     printf("Enter a number: \n");
+//     scanf("%d", &i);
+//     return i;
+// }
+// void print_my_name()
+// {
+//     printf("Your name is: Ali Neaz\n");
+// }
+// int main()
+// {
+//     int a, b, c, d;
+//     a = 645;
+//     b = 33;
+//     c = sum(a, b);
+//     // printf("C=%d\n", c);
+//     // printStar(5);
+//     // printf("The num is: %d\n", take_num());
+//     print_my_name();
+//     return 0;
+// }
+// int fact(int n)
+// {
+//     if (n == 0 || n == 1)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         return n * fact(n - 1);
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     printf("Enter the num: \n");
+//     scanf("%d", &n);
+//     // printf("Hello World\n");
+//     printf("The factorial is: %d\n", fact(n));
+//     return 0;
+// }
+
+int main()
+{
+    int a[10];
+    for (int i = 0; i < 10; i++)
+    {
+        printf("Enter num %d\n", i);
+        scanf("%d", &a[i]);
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\n", a[i]);
+    }
+    return 0;
+}
