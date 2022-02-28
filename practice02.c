@@ -21,3 +21,17 @@
 // }
 
 // #haven't completed thisone yet
+
+#include <stdio.h>
+int getnum()
+{
+    float a;
+    printf("Enter a number: \n");
+    scanf("%f", &a);
+    return a;
+}
+int main()
+{
+    printf("The val of a is: %f \n", getnum());
+    return 0;
+}

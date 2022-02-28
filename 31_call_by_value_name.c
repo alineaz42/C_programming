@@ -5,41 +5,56 @@ two types of calling functions
 2. call by reference : we pass the address of the variable and the value can be changed
 */
 // call by reference example
-int swap(int *a, int *b)
-{
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
-    return 0;
-}
-// call by value example
-int swap2(int a, int b)
-{
-    int temp;
-    temp = a;
-    a = b;
-    b = temp;
-    return 0;
-}
-void changeValue(int *a)
-{
-    // int b;
-    *a = *a + 5;
-}
-int main()
-{
-    int a = 44, b = 74;
-    printf("%d  %d \n", a, b);
-    swap(&a, &b);
-    printf("%d  %d \n", a, b);
-    swap2(a, b);
-    printf("%d  %d \n", a, b);
-    changeValue(&a);
-    printf("%d  %d \n", a, b);
+// int swap(int *a, int *b)
+// {
+//     int temp;
+//     temp = *a;
+//     *a = *b;
+//     *b = temp;
+//     return 0;
+// }
+// // call by value example
+// int swap2(int a, int b)
+// {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+//     return 0;
+// }
+// void changeValue(int *a)
+// {
+//     // int b;
+//     *a = *a + 5;
+// }
+// int main()
+// {
+//     int a = 44, b = 74;
+//     printf("%d  %d \n", a, b);
+//     swap(&a, &b);
+//     printf("%d  %d \n", a, b);
+//     swap2(a, b);
+//     printf("%d  %d \n", a, b);
+//     changeValue(&a);
+//     printf("%d  %d \n", a, b);
 
-    return 0;
-}
+//     return 0;
+// }
+// void swapval(int *a, int *b)
+// {
+//     int tem;
+//     tem = *a;
+//     *a = *b;
+//     *b = tem;
+// }
+// int main()
+// {
+//     int a = 5, b = 14;
+//     printf("The val of a: %d and b: %d\n", a, b);
+//     swapval(&a, &b);
+//     printf("The val of a: %d and b: %d\n", a, b);
+//     return 0;
+// }
 /*
 was trying to see if i can call any other nested functions
 int sam(int a, int b)
