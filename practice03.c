@@ -163,21 +163,35 @@
 // }
 
 // 16 break and continue statment
-int main()
-{
-    int a;
-    printf("a?\n");
-    scanf("%d", &a);
-    for (int i = 0; i < a; i++)
-    {
-        printf("i=%d\n", i);
-        if (i == 5)
-        {
-            printf("This is the code after the break\n");
-            // break;
-            continue;
-        }
-    }
-    printf("This is the code after the break\n");
-    return 0;
-}
+// int main()
+// {
+//     int a;
+//     printf("a?\n");
+//     scanf("%d", &a);
+//     for (int i = 0; i < a; i++)
+//     {
+//         printf("i=%d\n", i);
+//         if (i == 5)
+//         {
+//             printf("This is the code after the break\n");
+//             // break;
+//             continue;
+//         }
+//     }
+//     printf("This is the code after the break\n");
+//     return 0;
+// }
+
+// int main()
+// {
+//     int n = 5;
+//     int sam;
+//     for (int i = 1; i <= n;i++){
+//         if(n==0||n==1){
+//             printf("%d\n", n);
+//         }else{
+//             printf("%d\n",)
+//         }
+//     }
+//         return 0;
+// }
