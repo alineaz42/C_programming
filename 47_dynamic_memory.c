@@ -34,5 +34,22 @@ int main()
     {
         printf("i=%d; and ptr=%d\n", i, ptr[i]);
     }
+    // realloc
+    printf("Enter the new size of the new array: \n");
+    scanf("%d", &n);
+
+    ptr = (int *)realloc(ptr, n * sizeof(int));
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the value of %d of the array: \n", &i);
+        scanf("%d", &ptr[i]);
+    }
+    for (int i = 0; i < n; i++)
+    {
+        printf("The value of the array %d is: %d\n", i, ptr[i]);
+    }
+    // free
+    free(ptr);
+
     return 0;
 }
