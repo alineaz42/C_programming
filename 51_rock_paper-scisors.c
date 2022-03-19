@@ -1,52 +1,114 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-int generate_ran(int a)
+/*
+1. Rock
+2. Paper
+3. Scisors
+Rock crushes Scisors,Paper covers Rock,Scisors cuts paper
+*/
+int compNumber()
 {
     srand(time(NULL));
-    return rand() % a;
+    int a;
+    a = rand() % 3;
+    return a + 1;
 }
 
 int main()
 {
-    printf("1. Rock\n2. Paper\n3. Scisors\n");
-    int your_choice, a;
-    int run = 0;
-    // bool run;
-
-    // printf("The random number is: %d\n", generate_ran(5));
-    while (run < 3)
+    int com_num, your_choice, your_score = 0, comp_score = 0;
+    for (int i = 0; i < 3; i++)
     {
-        a = generate_ran(3);
-        printf("Enter your choice\n");
+        com_num = compNumber();
+        printf("Pleas enter a number between 1 to 3\n");
+        printf("Enter your choice:  \n");
+        printf("\n1. Rock\n2. Paper\n3. Scisors\n");
         scanf("%d", &your_choice);
-        if (your_choice == 0 && a == 1)
+        if (your_choice == com_num)
         {
-            printf("Computer wins");
+            printf("Its a tie\n");
+            printf("Your choic: %d. Computer choice: %d\n", your_choice, com_num);
         }
-        else if (your_choice == 0 && a == 2)
+        else if (your_choice == 1 && com_num == 2)
         {
-            printf("you win\n");
+            printf("You lose this round\n");
+            printf("Your choic: %d. Computer choice: %d\n", your_choice, com_num);
+            comp_score = comp_score + 1;
         }
-        else if (your_choice == 1 && a == 3)
+        else if (your_choice == 2 && com_num == 3)
         {
-            printf("computer wins\n");
+            printf("Your choic: %d. Computer choice: %d\n", your_choice, com_num);
+            printf("You lose this round\n");
+            comp_score = comp_score + 1;
         }
-        else if (your_choice == 2 && a == 0)
+        else if (your_choice == 3 && com_num == 1)
         {
-            printf("You win\n");
+            printf("Your choic: %d. Computer choice: %d\n", your_choice, com_num);
+            printf("You lose this round\n");
+            comp_score = comp_score + 1;
         }
         else
         {
-            printf("Comp chose: %d\n", a);
-            printf("You chosed %d\n", your_choice);
-            run++;
+            printf("Your choic: %d. Computer choice: %d\n", your_choice, com_num);
+            printf("You won this round\n");
+            your_score = your_score + 1;
         }
     }
-
+    printf("Computer Score: %d\n", comp_score);
+    printf("Your Score: %d\n", your_score);
     return 0;
 }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <time.h>
+
+// int generate_ran(int a)
+// {
+//     srand(time(NULL));
+//     return rand() % a;
+// }
+
+// int main()
+// {
+//     printf("1. Rock\n2. Paper\n3. Scisors\n");
+//     int your_choice, a;
+//     int run = 0;
+//     // bool run;
+
+//     // printf("The random number is: %d\n", generate_ran(5));
+//     while (run < 3)
+//     {
+//         a = generate_ran(3);
+//         printf("Enter your choice\n");
+//         scanf("%d", &your_choice);
+//         if (your_choice == 0 && a == 1)
+//         {
+//             printf("Computer wins");
+//         }
+//         else if (your_choice == 0 && a == 2)
+//         {
+//             printf("you win\n");
+//         }
+//         else if (your_choice == 1 && a == 3)
+//         {
+//             printf("computer wins\n");
+//         }
+//         else if (your_choice == 2 && a == 0)
+//         {
+//             printf("You win\n");
+//         }
+//         else
+//         {
+//             printf("Comp chose: %d\n", a);
+//             printf("You chosed %d\n", your_choice);
+//             run++;
+//         }
+//     }
+
+//     return 0;
+// }
 /*
 while (run > 0)
     {
