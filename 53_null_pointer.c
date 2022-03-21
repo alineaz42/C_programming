@@ -5,14 +5,29 @@
 int main()
 {
 
-    int a = 50;
+    int a = 54;
     int *ptr = NULL;
-    ptr = &a;
+    if (ptr != NULL)
+    {
+        printf("The address of a is: %d\n", *ptr);
+    }
+    else
+    {
+        // printf("the point er is a null pointer: \n");
+        ptr = &a;
+    }
+    printf("%d\n", *ptr);
+    // ptr = &a;
+    // printf("The address of a is: %p\n", ptr);
+    // printf("The value of a is: %d\n", *ptr);
+    return 0;
+    // int a = 50;
+    // int *ptr = NULL;
+    // ptr = &a;
     // int a = NULL;
     // a = 52;
     // printf("%d\n", a);
     // myptr();
-    return 0;
 }
 
 void myptr()

@@ -1,4 +1,4 @@
-#include <stdio.h>
+// #include <stdio.h>
 
 // 01
 // #include <stdio.h>
@@ -381,17 +381,37 @@
 //     return 0;
 // }
 
-int main()
-{
-    int a[10];
-    for (int i = 0; i < 10; i++)
-    {
-        printf("Enter num %d\n", i);
-        scanf("%d", &a[i]);
-    }
-    for (int i = 0; i < 10; i++)
-    {
-        printf("%d\n", a[i]);
-    }
-    return 0;
-}
+// int main()
+// {
+//     int a[10];
+//     for (int i = 0; i < 10; i++)
+//     {
+//         printf("Enter num %d\n", i);
+//         scanf("%d", &a[i]);
+//     }
+//     for (int i = 0; i < 10; i++)
+//     {
+//         printf("%d\n", a[i]);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int i = 1;
+//     while (i)
+//     {
+//         printf("Hello World\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     printf("%d\n", 2 == 2 && 3 > 5);
+//     return 0;
+// }
