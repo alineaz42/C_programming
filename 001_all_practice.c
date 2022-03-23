@@ -415,3 +415,19 @@
 //     printf("%d\n", 2 == 2 && 3 > 5);
 //     return 0;
 // }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, n;
+    printf("Enter what you want:\n");
+    scanf("%d", &n);
+    for (i = 1; i <= 10; i++)
+    {
+        printf("%dX%d=%d\n", i, n, n * i);
+    }
+    return 0;
+}
+*/
