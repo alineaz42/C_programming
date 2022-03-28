@@ -20,6 +20,6 @@ links the functions implementations
 
 int main()
 {
-
+    printf("File name is: %s\n", __FILE__);
     return 0;
 }
