@@ -14,3 +14,12 @@ assembly level instructions are generated to machine codes
 links the functions implementations
 */
 // preprocessing further info: https://codewithharry.com/videos/c-language-tutorials-in-hindi-58
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    return 0;
+}
